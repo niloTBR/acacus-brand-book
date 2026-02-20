@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
   BookOpen,
-  Layers,
   Type,
   Palette,
   MessageSquare,
@@ -18,7 +17,6 @@ import {
   MousePointerClick,
   TextCursor,
   Square,
-  Sparkle,
 } from "lucide-react";
 
 const navigation = [
@@ -48,8 +46,6 @@ const navigation = [
       { name: "Cards", href: "/components/cards", icon: Square },
       { name: "Text Effects", href: "/components/text-effects", icon: TextCursor },
       { name: "Buttons", href: "/components/buttons", icon: MousePointerClick },
-      { name: "Backgrounds", href: "/components/backgrounds", icon: Sparkle },
-      { name: "Animations", href: "/components/animations", icon: Layers },
     ],
   },
 ];
