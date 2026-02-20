@@ -48,7 +48,7 @@ export function AnimatedLogo({
       filter: "blur(0px)",
       transition: {
         duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
   };
@@ -59,7 +59,7 @@ export function AnimatedLogo({
       opacity: 0.3,
       transition: {
         duration: 1.2,
-        ease: "easeOut",
+        ease: [0, 0, 0.2, 1] as const,
       },
     },
   };
@@ -166,7 +166,7 @@ export function AnimatedLogoIcon({
           filter: "blur(0px)",
           scale: 1
         } : {}}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as const }}
       >
         <polygon
           fill="#001e3c"
@@ -211,7 +211,7 @@ export function AnimatedLogoFull({
       filter: "blur(0px)",
       transition: {
         duration: 0.7,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
   };
@@ -228,7 +228,7 @@ export function AnimatedLogoFull({
       filter: "blur(0px)",
       transition: {
         duration: 0.7,
-        ease: [0.22, 1, 0.36, 1],
+        ease: [0.22, 1, 0.36, 1] as const,
       },
     },
   };

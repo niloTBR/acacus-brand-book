@@ -115,9 +115,10 @@ interface DocGridProps {
   children: ReactNode;
   cols?: 2 | 3 | 4;
   gap?: "sm" | "md" | "lg";
+  className?: string;
 }
 
-export function DocGrid({ children, cols = 2, gap = "md" }: DocGridProps) {
+export function DocGrid({ children, cols = 2, gap = "md", className }: DocGridProps) {
   const colClasses = {
     2: "grid-cols-1 md:grid-cols-2",
     3: "grid-cols-1 md:grid-cols-3",
@@ -131,7 +132,7 @@ export function DocGrid({ children, cols = 2, gap = "md" }: DocGridProps) {
   };
 
   return (
-    <div className={cn("grid", colClasses[cols], gapClasses[gap])}>
+    <div className={cn("grid", colClasses[cols], gapClasses[gap], className)}>
       {children}
     </div>
   );
